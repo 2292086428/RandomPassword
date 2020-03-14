@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
+	<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+	<title>Generate random password</title>
+<body data-type="rand_key">
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+<!-- 内容区域 -->
+				<div class="row">
+					<style type="text/css">
+					.widget-body.am-fr input{color:#f37b1d;}
+					.widget-body.am-fr textarea{color:#f37b1d;}
+				</style>
+				<div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
+					<div class="widget am-cf">
+						<div class="widget-head am-cf">
+							<div class="widget-title am-fl">Generate random password</div>
+							<div class="widget-function am-fr">
+								<a href="javascript:;" class="am-icon-cog"></a>
+							</div>
+						</div>
+						<div class="widget-body am-fr">
+
+							<div class="am-form-group">
+								<h3>选项</h3>
+								<label class="am-checkbox-inline">
+									<input type="checkbox"  value="" data-am-ucheck id="include_number" checked> 数字
+								</label>
+								<label class="am-checkbox-inline">
+									<input type="checkbox"  value="" data-am-ucheck id="include_lowercaseletters" checked> 小写字母
+								</label>
+								<label class="am-checkbox-inline">
+									<input type="checkbox"  value="" data-am-ucheck id="include_uppercaseletters" checked> 大写字母
+								</label>
+								<label class="am-checkbox-inline">
+									<input type="checkbox"  value="" data-am-ucheck id="include_punctuation"> 标点符号
+								</label>
+								<label class="am-checkbox-inline">
+									<input type="checkbox" id="password_unique"  value="" checked data-am-ucheck> 
+									字符不重复
+								</label>
+							</div>
+							<div class="layui-form-item">
+
+								<div class="layui-inline">
+									<label class="layui-label">密码长度</label>
+									<input type="number"  required="" lay-verify="required" lay-vertype="tips" placeholder="请输入密码" autocomplete="off" class="layui-input" min="0" value="12"  id="password_length">
+								</div>
+
+								<div class="layui-inline">
+									<label class="layui-label">密码数量</label>
+									<input type="number" required="" lay-verify="required" lay-vertype="tips" placeholder="请输入密码" autocomplete="off" class="layui-input" min="0" value="5" id="password_quantity">
+								</div>
+							</div>
+							<div class="layui-input-item">
+								<textarea placeholder="请输入内容" class="layui-textarea" id="output" rows="7"></textarea>
+							</div>
+							<div class="layui-form-item">
+								<button class="layui-btn" lay-submit="" id="generate">立即提交</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</div>
+</div>
+</div>
+<script src="rand_key.js"></script>
+</body>
+
+</html>
